@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div id="body"></div>
+
+    <script>
+
+        var rows = parseInt(prompt("Enter the number of rows:"));
+        var columns = parseInt(prompt("Enter the number of columns:"));
+
+        var body = document.getElementById("body");
+        var tableHTML = "<table border='1'>";
+
+        for (var i = 0; i < rows; i++) {
+            tableHTML += "<tr>";
+            for (var j = 0; j < columns; j++) {
+                tableHTML += "<td> Hello</td>";
+            }
+
+            tableHTML += "</tr>";
+        }
+
+        tableHTML += "</table>";
+        body.innerHTML = tableHTML;
+
+    </script>
+</body>
+
+</html>
